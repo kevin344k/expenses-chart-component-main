@@ -1,0 +1,156 @@
+//# Front-end Style Guide
+
+//## Layout
+
+//The designs were created to the following widths:
+
+//- Mobile: 375px
+//- Desktop: 1440px
+
+//## Colors
+
+//### Primary
+
+$Soft_red: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+//### Neutral
+
+$Dark_brown: hsl(25, 47%, 15%);
+$Medium_brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very_pale_orange: hsl(33, 100%, 98%);
+
+//## Typography
+
+//### Body Copy
+
+$Font_size: 1.8rem;
+$font_family_DM:'DM Sans', sans-serif;
+//### Font
+
+//- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+//- Weights: 400, 700
+
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $Cream;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: $Font_size;
+    font-family: $font_family_DM;
+    main{
+        width: 340px;
+        .sect--balance{
+            background-color: $Soft_red;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+          
+            .balance{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                vertical-align: middle;
+                :nth-child(1){
+                    color: $Very_pale_orange;
+                }
+                :nth-child(2){
+                    color: $Very_pale_orange;
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+            .logo{
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-image: url("../images/logo.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        .sect--graph{
+            width: 100%;
+            background-color: $Very_pale_orange;
+            padding: 40px 20px;
+            border-radius: 10px;
+            h1{
+                color: $Dark_brown;
+                margin-bottom: 20px;
+            }
+            .div--chart{
+                width: 100%;
+                height: 300px;
+                padding-bottom: 20px;
+                border-bottom: 3px solid $Cream;
+                margin-bottom: 20px;
+               
+            }
+        }
+        .div--total-month{
+            display: flex;
+            color: $Medium_brown;
+            align-items: center;
+            justify-content: space-between;
+         
+            :nth-child(1){
+               
+                :nth-child(1){
+                font-size: $Font_size;
+                }
+                :nth-child(2){
+                font-size: 2.5rem;
+                color: black;
+                font-weight: 700;
+                text-align: left;
+                }
+            }
+            :nth-child(2){
+                display: flex;
+                flex-direction: column;
+               align-self: flex-end;
+               text-align: end;
+               :nth-child(1){
+                color: black;
+                font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    a{
+        color: $Dark_brown;
+        text-decoration: none;
+    }
+}
+
+
+@media(min-width:1440px){
+body{
+    main{
+        max-width: none;
+        width: 700px;
+    }
+}
+}

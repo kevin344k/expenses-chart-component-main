@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="sect--balance">
+        <div class="balance">
+          <span>My balance</span>
+          <span class="balance--quantity">$921.48</span>
+        </div>
+        <span class="logo"></span>
+      </section>
+      <section class="sect--graph">
+        <h1>Spending - Last 7 days</h1>
+        <div class="div--chart">
+          <canvas id="myChart"> </canvas>
+        </div>
+        <div class="div--total-month">
+          <div>
+            <span>Total this month</span>
+            <span>$478.33</span>
+          </div>
+          <div>
+            <span>+2.4%</span>
+            <span>from last month</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Challengue made by <a href="https://github.com/kevin344k">kevin344k ®</a></footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

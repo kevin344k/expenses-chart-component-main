@@ -1,0 +1,114 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "DM Sans", sans-serif;
+}
+body main {
+  width: 340px;
+}
+body main .sect--balance {
+  background-color: hsl(10, 79%, 65%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+body main .sect--balance .balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+body main .sect--balance .balance :nth-child(1) {
+  color: hsl(33, 100%, 98%);
+}
+body main .sect--balance .balance :nth-child(2) {
+  color: hsl(33, 100%, 98%);
+  font-weight: 700;
+  font-size: 3rem;
+}
+body main .sect--balance .logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url("../images/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body main .sect--graph {
+  width: 100%;
+  background-color: hsl(33, 100%, 98%);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+body main .sect--graph h1 {
+  color: hsl(25, 47%, 15%);
+  margin-bottom: 20px;
+}
+body main .sect--graph .div--chart {
+  width: 100%;
+  height: 300px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid hsl(27, 66%, 92%);
+  margin-bottom: 20px;
+}
+body main .div--total-month {
+  display: flex;
+  color: hsl(28, 10%, 53%);
+  align-items: center;
+  justify-content: space-between;
+}
+body main .div--total-month :nth-child(1) :nth-child(1) {
+  font-size: 1.8rem;
+}
+body main .div--total-month :nth-child(1) :nth-child(2) {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+  text-align: left;
+}
+body main .div--total-month :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  text-align: end;
+}
+body main .div--total-month :nth-child(2) :nth-child(1) {
+  color: black;
+  font-weight: 700;
+}
+
+footer {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+footer a {
+  color: hsl(25, 47%, 15%);
+  text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  body main {
+    max-width: none;
+    width: 700px;
+  }
+}/*# sourceMappingURL=main.css.map */
